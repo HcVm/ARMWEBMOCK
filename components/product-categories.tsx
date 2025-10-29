@@ -9,7 +9,7 @@ const products = [
     id: 1,
     name: "Herramientas de agricultura",
     image: "/agricultural-tools-equipment.jpg",
-    slug: "herramientas-agricultura",
+    slug: "herramientas-de-agricultura",
     color: "from-emerald-500 to-teal-600",
   },
   {

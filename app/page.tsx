@@ -2,6 +2,7 @@ import Header from "@/components/header"
 import HeroSection from "@/components/hero-section"
 import ProductCategories from "@/components/product-categories"
 import FeaturedSection from "@/components/featured-section"
+import PeruComprasSection from "@/components/peru-compras-section"
 import ContentCards from "@/components/content-cards"
 import Footer from "@/components/footer"
 
@@ -12,6 +13,7 @@ export default function Home() {
       <HeroSection />
       <ProductCategories />
       <FeaturedSection />
+      <PeruComprasSection />
       <ContentCards />
       <Footer />
     </main>

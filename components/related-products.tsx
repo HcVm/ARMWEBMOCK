@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import { getRelatedProducts } from "@/lib/products-data"
 
 interface RelatedProductsProps {
   currentProductId: number
@@ -7,27 +8,11 @@ interface RelatedProductsProps {
 }
 
 export default function RelatedProducts({ currentProductId, category }: RelatedProductsProps) {
-  // En una app real, estos datos vendrían de una API
-  const relatedProducts = [
-    {
-      id: 2,
-      name: "Cultivador Eléctrico 300",
-      image: "/electric-cultivator-agricultural-tool.jpg",
-      price: 850,
-    },
-    {
-      id: 3,
-      name: "Rastrillo Mecánico 400",
-      image: "/mechanical-rake-agricultural-equipment.jpg",
-      price: 650,
-    },
-    {
-      id: 4,
-      name: "Azadón Profesional Plus",
-      image: "/professional-hoe-agricultural-tool.jpg",
-      price: 450,
-    },
-  ]
+  const relatedProducts = getRelatedProducts(currentProductId, 3)
+
+  if (relatedProducts.length === 0) {
+    return null
+  }
 
   return (
     <div className="mb-16">
