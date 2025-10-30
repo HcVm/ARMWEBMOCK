@@ -20,7 +20,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-sm text-gray-400 leading-relaxed mt-4">
-              ARM CORPORATIONS es líder en soluciones profesionales desde 1995. Ofrecemos productos de alta calidad para
+              ARM CORPORATIONS es líder en soluciones profesionales desde 2020. Ofrecemos productos de alta calidad para
               agricultura, construcción y jardinería. Compromiso y confiabilidad son nuestros valores fundamentales.
             </p>
             <div className="flex gap-3 mt-6">

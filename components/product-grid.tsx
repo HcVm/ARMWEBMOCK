@@ -75,7 +75,7 @@ export default function ProductGrid({ products }: ProductGridProps) {
 
             {/* Precio y botón */}
             <div className="flex items-center justify-between">
-              <span className="text-xl font-bold text-blue-600">${product.price}</span>
+              <span className="text-xl font-bold text-blue-600">S/.{product.price}</span>
               <button className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-semibold hover:bg-blue-700 transition-colors">
                 Más info
               </button>

@@ -74,8 +74,8 @@ export default function ProductFilters({ filters, setFilters }: ProductFiltersPr
               className="w-full"
             />
             <div className="flex justify-between text-sm text-gray-600">
-              <span>${filters.priceRange[0]}</span>
-              <span>${filters.priceRange[1]}</span>
+              <span>S/.{filters.priceRange[0]}</span>
+              <span>S/.{filters.priceRange[1]}</span>
             </div>
           </div>
         )}
